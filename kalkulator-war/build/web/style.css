@@ -1,0 +1,80 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 9, 2020, 8:18:01 AM
+    Author     : rafli
+*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100hv;
+ background: #091921;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.card{
+    width: 50%;
+}
+.calculator{
+    position: relative;
+    display: grid;
+}
+.calculator .hasil{
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+}
+.calculator .num{
+    display: grid;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    background: #0c2835;
+    place-items: center;
+    border: 1px solid rgba(0,0,0,.1);
+}
+.calculator .num:active{
+    background: #74ff3b;
+    color: #111;
+}
+.calculator input.clear{
+    grid-column: span 2;
+    width: 120px;
+    background: #ff3077;
+}
+.calculator input.plus{
+    grid-row: span 2;
+    height: 120px;
+    
+}
+.calculator input.equal{
+    background: #03b1ff;
+}
+.box{
+  height: 100px;
+  width: 245px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
